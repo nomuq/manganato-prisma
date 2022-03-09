@@ -1,0 +1,24 @@
+{
+  "name": "manganato",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@prisma/client": "3.10.0",
+    "prisma": "^3.10.0",
+    "ts-node": "10.6.0",
+    "typescript": "4.6.2",
+    "@types/node": "16.11.26"
+  },
+  "scripts": {
+    "dev": "ts-node ./script.ts",
+    "migrate": "rm -rf prisma/migrations && yarn run prisma migrate dev --name migration --create-only",
+    "format": "prisma format"
+  },
+  "dependencies": {
+    "@prisma/client": "3.10.0"
+  },
+  "engines": {
+    "node": ">=12.2.0"
+  }
+}
